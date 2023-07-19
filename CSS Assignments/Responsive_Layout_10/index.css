@@ -6,7 +6,6 @@
 body {
     margin-right: 0;
     margin-bottom: 0;
-    border-top-left-radius: 40px;
     background-color: #fff;
 }
 
@@ -20,22 +19,21 @@ a {
 }
 
 .homepage {
-    background-color: #7030cc;
+    background-color: #1bbcef;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:50px ;
+    padding: 10px;
 }
 
 nav .list {
     display: flex;
     width: 500px;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-left: 170px;
+    margin-right: 50px;
 }
 
 nav .list-item {
@@ -51,25 +49,16 @@ nav .active {
 
 .logo {
     width: 120px;
-    margin-top: 50px;
     margin-left: 150px;
 }
 
-nav button {
-    height: 40px;
-    margin-right: 150px;
-    margin-top: 50px;
-    width: 120px;
-    border: none;
-    background-color: #1bbcef;
-    color: #fff;
-}
 .homepage-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: #7030cc; */
+    background-color: #181818;
+    height: 470px;
 }
 .homepage-img {
     padding: 50px;
@@ -94,8 +83,6 @@ nav button {
     background-color: #1bbcef;
 }
 
-
-
 .bottom-card-content p {
     width: 170px;
     font-size: 14px;
@@ -107,3 +94,69 @@ nav button {
     color: #fff;
 }
 
+  @media (min-width: 481px) and (max-width: 767px){
+    .logo {
+        margin-left: 60px;
+    }
+    .bottom-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 50px;
+        margin-top: 50px;
+    }
+    .bottom-card{
+        display: flex;
+        height: 150px;
+        width: 200px;
+        margin-inline: 10px;
+        text-align: center;
+    }
+    
+    .bottom-card-content p {
+        width: 170px;
+        font-size: 14px;
+        color: #181818;
+        margin-top: -10px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 600px)
+  {
+    nav .list {
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    .logo {
+        width: 90px;
+        margin-left: 20px;
+    }
+    .bottom-cards{
+        flex-direction: column;
+    }
+    .bottom-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 80vw;
+        margin-bottom: 40px;
+
+    }
+    .bottom-card-content p {
+        width: 80vw;
+        margin-top: 10px;
+    }
+    
+.homepage-container {
+    height: 470px;
+}
+.homepage-img {
+    padding: 50px;
+    height:400px ;
+    width: 400px;
+}
+  }
